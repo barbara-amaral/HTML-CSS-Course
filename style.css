@@ -19,6 +19,7 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 nav {
@@ -116,6 +117,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
+  width: 500px;
 }
 
 li:first-child {
@@ -159,4 +161,9 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
