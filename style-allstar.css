@@ -12,6 +12,7 @@ article {
   border: 5px solid black;
   font-family: sans-serif;
   line-height: 1.4;
+  position: relative;
 }
 
 .sneaker-title {
@@ -19,6 +20,19 @@ article {
   text-align: center;
   background-color: #f7f7f7;
   padding: 20px;
+}
+
+.sale {
+  background-color: red;
+  width: fit-content;
+  padding: 8px 20px;
+  color: #f7f7f7;
+  font-weight: bold;
+  letter-spacing: 4px;
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  /* pode usar também: display: inline-block; */
 }
 
 p strong {
@@ -72,9 +86,42 @@ ul li {
 .more-information:link,
 .more-information:visited {
   color: black;
+  display: inline-block;
+  margin-bottom: 25px;
 }
 
 .more-information:hover,
 .more-information:active {
   text-decoration: none;
+}
+
+.color-boxes li {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.black-box {
+  background-color: black;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.yellow-box {
+  background-color: goldenrod;
+}
+
+.green-box {
+  background-color: greenyellow;
+}
+
+.brown-box {
+  background-color: sienna;
 }
