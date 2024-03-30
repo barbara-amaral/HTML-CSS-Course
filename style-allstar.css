@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -44,23 +45,24 @@ p strong {
   color: #444;
   font-size: 12px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 article h3 {
   text-transform: uppercase;
   font-size: 16;
-  margin-top: 25px;
-  margin-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 ul {
   list-style: square;
-  margin-left: 25px;
 }
 
 ul li {
-  margin-bottom: 10px;
+  margin: 0 0 10px 20px;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
 }
 
 .btn {
@@ -79,15 +81,11 @@ ul li {
   border-top: 5px solid black;
 }
 
-.product-info {
-  margin-bottom: 10px;
-}
-
 .more-information:link,
 .more-information:visited {
   color: black;
   display: inline-block;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .more-information:hover,
@@ -98,8 +96,12 @@ ul li {
 .color-boxes li {
   width: 22px;
   height: 22px;
-  display: inline-block;
-  margin-right: 10px;
+  list-style-type: none;
+}
+
+.color-boxes {
+  display: flex;
+  gap: 10px;
 }
 
 .black-box {
@@ -124,4 +126,55 @@ ul li {
 
 .brown-box {
   background-color: sienna;
+}
+
+/* Flex layout */
+
+/* .shoe-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+} */
+
+.product-info {
+  padding: 10px 0 10px 0;
+}
+
+/* .shoe-info {
+  flex: 1;
+}
+
+.details {
+  flex: 1;
+} */
+
+/* .shoe-img {
+  align-self: flex-end;
+} */
+
+.btn {
+  margin-top: -7px;
+}
+
+.price-shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* GRID LAYOUT */
+
+article {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.sneaker-title {
+  grid-column: 1 / -1;
+}
+
+.btn {
+  grid-column: 1 / -1;
 }
